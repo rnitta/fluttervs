@@ -5746,7 +5746,7 @@ break}if(typeof t!=="number"){x=H.c(t)
 z=1
 break}s=u-t
 if(s>0)r=""+s+" above."
-else r=s===0?"equal.":""+s+" to get."
+else r=s===0?"equal.":""+-s+" to get."
 C.BZ.K(v,"summary").textContent=r
 u=w.j(w.r)
 C.BZ.K(v,"footer-me").textContent=u

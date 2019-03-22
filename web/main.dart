@@ -148,7 +148,7 @@ class DOM {
     } else if (diff == 0) {
       text = 'equal.';
     } else {
-      text = '$diff to get.';
+      text = '${-diff} to get.';
     }
     document.getElementById("summary").text = text;
   }
