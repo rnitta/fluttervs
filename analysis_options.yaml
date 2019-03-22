@@ -1,0 +1,15 @@
+include: package:pedantic/analysis_options.yaml
+
+# For lint rules and documentation, see http://dart-lang.github.io/linter/lints.
+linter:
+  rules:
+    - avoid_empty_else
+    - avoid_types_as_parameter_names
+    - no_duplicate_case_values
+    - unrelated_type_equality_checks
+    - valid_regexps
+    - camel_case_types
+
+analyzer:
+  exclude:
+    - tests/**/*

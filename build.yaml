@@ -1,0 +1,26 @@
+targets:
+  $default:
+    builders:
+      sass_builder:
+        enabled: true
+        generate_for:
+          - web/styles.scss
+        options:
+          build_extensions:
+            .scss: [".css"]
+        dev_options:
+          outputStyle: expanded
+        release_options:
+          outputStyle: compressed
+      build_web_compilers|entrypoint:
+        enabled: true
+        generate_for:
+          - web/main.dart
+        options:
+          dart2js_args:
+            - --dump-info
+            - --minify
+            - --no-frequency-based-minification
+            - --no-source-maps
+            - --show-package-warnings
+            - -O2

@@ -1,0 +1,37 @@
+.isLoading {
+  position: relative;
+
+  &::before {
+    z-index: 100;
+    display: block;
+    content: '';
+    position: absolute;
+    border-radius: 4px;
+    top: -20px;
+    right: -20px;
+    left: -20px;
+    bottom: -20px;
+    background-color: rgba(255, 255, 255, .9);
+  }
+
+
+  $str: (⣾ ⣽ ⣻ ⢿ ⡿ ⣟ ⣯ ⣷);
+  @keyframes loading {
+    @for $i from 1 through length($str) {
+      #{100*($i - 1)/(length($str) + 1)}% {
+        content: "#{nth($str, $i)}";
+      }
+    }
+  }
+
+  &::after {
+    z-index: 101;
+    position: absolute;
+    font-size: 40px;
+    top: calc(50% - .5em);
+    left: calc(50% - .5em);
+    display: inline-block;
+    content: '⣾';
+    animation: loading .5s linear infinite;
+  }
+}
