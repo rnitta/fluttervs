@@ -7,7 +7,7 @@ Written in dart.
 
 - [vs. react-native fork](https://fluttervs.netlify.com/#forks.facebook/react-native)
 - [vs. titanium mobile watcher](https://fluttervs.netlify.com/#watchers.appcelerator/titanium_mobile)
-- [vs. react-native strar](https://fluttervs.netlify.com/#stargazers.ionic-team/ionic)
+- [vs. ionic star](https://fluttervs.netlify.com/#stargazers.ionic-team/ionic)
 
 
 # requirement
