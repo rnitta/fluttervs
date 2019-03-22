@@ -1,4 +1,7 @@
-Compare the number of stargazers/forks/watchers with counterparts.
+Compare the number of stargazers/forks/watchers with counterparts.  
+Written in dart.
+
+![screen shot](./ss.png)
 
 [deployed on netlify](https://fluttervs.netlify.com)
 
@@ -30,3 +33,8 @@ release build
 ```bash
 $ pub run build_runner build --release --output web:public
 ```
+
+# todo
+- switch link
+- refresh button
+- more FWs
