@@ -35,7 +35,5 @@ $ pub run build_runner build --release --output web:public
 ```
 
 # todo
-- switch link
-- github link
 - refresh button
 - more FWs

@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'dart:html';
 import './dom.dart';
 
 class Model with Decorator {
@@ -19,7 +20,6 @@ class Model with Decorator {
   int opponentCount;
   int flutterCount;
 
-  // singleton (necessary?)
   static final Model _model = Model._();
 
   Model._();
@@ -37,6 +37,22 @@ class Model with Decorator {
     reload();
   }
 
+  // fixme: bad impl
+  void changeOpponent(String _opponentRepo) {
+    opponentRepo = _opponentRepo;
+    String newHash = '#$criteria.$_opponentRepo';
+    window.history.replaceState(null, 'Flutter vs ${opponentCandidates[_opponentRepo]}', newHash);
+    mutateHash(newHash);
+  }
+
+  // fixme: bad impl
+  void changeCriteria(String _criteria) {
+    criteria = _criteria;
+    String newHash = '#$_criteria.$opponentRepo';
+    window.history.replaceState(null, 'Flutter vs ${opponentCandidates[opponentRepo]}', newHash);
+    mutateHash(newHash);
+  }
+
   void reload() async {
     DOM.startLoading();
     criteria = _parseCriteria();
@@ -45,6 +61,7 @@ class Model with Decorator {
     DOM.mutateOpponentName(_opponentName(), opponentRepo);
     DOM.mutateCriteriaClass(criteriaCandidates, criteria);
     DOM.mutateCriteriaTitle(criteria);
+    DOM.addClickEvents();
     await Future.wait([_fetchCount(opponentApiUri), _fetchCount(flutterApiUri)]).then((results) {
       opponentCount = results[0];
       flutterCount = results[1];

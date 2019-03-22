@@ -1,10 +1,34 @@
 import 'dart:html';
+import './model.dart';
 
 // actions related to control DOM.
 class DOM {
   static final _validator = NodeValidatorBuilder()
     ..allowHtml5(uriPolicy: AllowAllUrlPolicy())
     ..allowElement('a', attributes: ['href', 'target']);
+
+  //fixme: あんまよくない
+  static void addClickEvents() {
+    final model = Model();
+    document.getElementById('reactnativenav').onClick.listen((e) {
+      model.changeOpponent('facebook/react-native');
+    });
+    document.getElementById('ionicnav').onClick.listen((e) {
+      model.changeOpponent('ionic-team/ionic');
+    });
+    document.getElementById('titaniumnav').onClick.listen((e) {
+      model.changeOpponent('appcelerator/titanium_mobile');
+    });
+    document.getElementById('starnav').onClick.listen((e) {
+      model.changeCriteria('stragazers');
+    });
+    document.getElementById('watchernav').onClick.listen((e) {
+      model.changeCriteria('watchers');
+    });
+    document.getElementById('forknav').onClick.listen((e) {
+      model.changeCriteria('forks');
+    });
+  }
 
   static void replaceHistory(String opponentName, String path) {
     window.history.replaceState(null, 'Flutter vs $opponentName', path);
