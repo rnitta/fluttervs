@@ -5703,20 +5703,22 @@ t=e+c
 if(t>v.length)H.vh(P.C3("End "+t+" must not be greater than the number of characters in the file, "+u.gk(u)+"."))
 else if(e<0)H.vh(P.C3("Start may not be negative, was "+e+"."))
 throw H.J(new E.Vx(z,b,new Y.n4(u,e,t)))},
-Fx:function(a,b,c,d){return this.m9(a,b,c,null,d)}}}],["","",,K,{"^":"",fr:{"^":"Mh;"}}],["","",,F,{"^":"",
+Fx:function(a,b,c,d){return this.m9(a,b,c,null,d)}}}],["","",,K,{"^":"",fr:{"^":"Mh;"}}],["","",,G,{"^":"",
+n:function(a,b){var z
+H.q(a,"$isz",[P.qU],"$asz")
+z=C.BZ.K(document,"criteria-icon")
+C.Nm.L(a,new G.BZ(z))
+J.d(z).i(0,"i"+H.E(b))},
+BZ:{"^":"Tp:8;a",
+$1:function(a){H.h(a)
+J.d(this.a).R(0,"i"+H.E(a))}}}],["","",,F,{"^":"",
 Iq:function(){var z,y
 z=$.$get$I()
 y=window.location.hash
 z.toString
 if(y==null||y==="")z.b="#"
 else z.b=y
-z.V(0)},
-n:function(a,b){var z
-H.q(a,"$isz",[P.qU],"$asz")
-z=C.BZ.K(document,"criteria-icon")
-C.Nm.L(a,new F.BZ(z))
-J.d(z).i(0,"i"+H.E(b))},
-tK:{"^":"Hb;a,0b,0c,0d,0e,0f,0r,a$,b$",
+z.V(0)}},1],["","",,Z,{"^":"",tK:{"^":"Hb;a,0b,0c,0d,0e,0f,0r,a$,b$",
 V:function(a){var z=0,y=P.F(null),x,w=this,v,u,t,s,r
 var $async$V=P.l(function(b,c){if(b===1)return P.f(c,y)
 while(true)switch(z){case 0:v=document
@@ -5727,11 +5729,11 @@ w.d=u
 w.e="https://api.github.com/repos/"+H.E(u)
 u=C.k3.q(0,w.I())
 C.BZ.K(v,"header-opponent").textContent=H.h(u)
-F.n(C.zv,w.c)
+G.n(C.zv,w.c)
 u=w.c
 C.BZ.K(v,"criteria-title").textContent="Comparing the number of Github "+H.E(u)+","
 z=3
-return P.j(P.p(H.L([w.E(w.e),w.E(w.a)],[[P.b,P.K]]),null,!1,P.K).W(new F.r(w),null),$async$V)
+return P.j(P.p(H.L([w.E(w.e),w.E(w.a)],[[P.b,P.K]]),null,!1,P.K).W(new Z.r(w),null),$async$V)
 case 3:u=w.r
 t=w.f
 if(typeof u!=="number"){x=u.H()
@@ -5773,23 +5775,16 @@ y=z.length
 if(y===2){if(1>=y)return H.k(z,1)
 x=C.k3.q(0,z[1])!=null}else x=!1
 if(x){if(1>=y)return H.k(z,1)
-return z[1]}else return"facebook/react-native"}},
-r:{"^":"Tp:43;a",
+return z[1]}else return"facebook/react-native"}},r:{"^":"Tp:43;a",
 $1:function(a){var z,y
 H.q(a,"$isz",[P.K],"$asz")
 z=this.a
 y=J.U6(a)
 z.f=H.a(y.q(a,0))
-z.r=H.a(y.q(a,1))}},
-T5:{"^":"Mh;",
+z.r=H.a(y.q(a,1))}},T5:{"^":"Mh;",
 j:function(a){if(a==null)return"Error"
-return H.yD(C.jn.w(a),P.nu("(\\d{1,3})(?=(\\d{3})+(?!\\d))",!0,!1),H.M(new F.fC(),{func:1,ret:P.qU,args:[P.Od]}),null)}},
-fC:{"^":"Tp:6;",
-$1:function(a){return H.E(a.q(0,1))+","}},
-BZ:{"^":"Tp:8;a",
-$1:function(a){H.h(a)
-J.d(this.a).R(0,"i"+H.E(a))}},
-Hb:{"^":"Mh+T5;"}},1],["","",,D,{"^":""}]]
+return H.yD(C.jn.w(a),P.nu("(\\d{1,3})(?=(\\d{3})+(?!\\d))",!0,!1),H.M(new Z.fC(),{func:1,ret:P.qU,args:[P.Od]}),null)}},fC:{"^":"Tp:6;",
+$1:function(a){return H.E(a.q(0,1))+","}},Hb:{"^":"Mh+T5;"}}],["","",,D,{"^":""}]]
 setupProgram(dart,0,0)
 J.LX=function(a){if(a==null)return a
 if(!(a instanceof P.Mh))return J.kd.prototype
@@ -6061,7 +6056,7 @@ I.$lazy(y,x,w)}})(["fa","$get$fa",function(){return H.Yg("_$dart_dartClosure")},
 toString:function(){return"$receiver$"}}))},"k1","$get$k1",function(){return H.cM(H.S7({$method$:null,
 toString:function(){return"$receiver$"}}))},"Re","$get$Re",function(){return H.cM(H.S7(null))},"fN","$get$fN",function(){return H.cM(function(){var $argumentsExpr$='$arguments$'
 try{null.$method$($argumentsExpr$)}catch(z){return z.message}}())},"qi","$get$qi",function(){return H.cM(H.S7(void 0))},"rZ","$get$rZ",function(){return H.cM(function(){var $argumentsExpr$='$arguments$'
-try{(void 0).$method$($argumentsExpr$)}catch(z){return z.message}}())},"kq","$get$kq",function(){return H.cM(H.Mj(null))},"tt","$get$tt",function(){return H.cM(function(){try{null.$method$}catch(z){return z.message}}())},"dt","$get$dt",function(){return H.cM(H.Mj(void 0))},"Ai","$get$Ai",function(){return H.cM(function(){try{(void 0).$method$}catch(z){return z.message}}())},"Wc","$get$Wc",function(){return P.xg()},"h9","$get$h9",function(){return P.l9(null,C.NU,P.c8)},"x","$get$x",function(){return[]},"wY","$get$wY",function(){return P.WI()},"bt","$get$bt",function(){return H.DQ(H.XF(H.L([-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-1,-2,-2,-2,-2,-2,62,-2,62,-2,63,52,53,54,55,56,57,58,59,60,61,-2,-2,-2,-1,-2,-2,-2,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,-2,-2,-2,-2,63,-2,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,-2,-2,-2,-2,-2],[P.K])))},"Gt","$get$Gt",function(){return P.EF(["iso_8859-1:1987",C.r9,"iso-ir-100",C.r9,"iso_8859-1",C.r9,"iso-8859-1",C.r9,"latin1",C.r9,"l1",C.r9,"ibm819",C.r9,"cp819",C.r9,"csisolatin1",C.r9,"iso-ir-6",C.S0,"ansi_x3.4-1968",C.S0,"ansi_x3.4-1986",C.S0,"iso_646.irv:1991",C.S0,"iso646-us",C.S0,"us-ascii",C.S0,"us",C.S0,"ibm367",C.S0,"cp367",C.S0,"csascii",C.S0,"ascii",C.S0,"csutf8",C.dy,"utf-8",C.dy],P.qU,P.Zi)},"M5","$get$M5",function(){return typeof process!="undefined"&&Object.prototype.toString.call(process)=="[object process]"&&process.platform=="win32"},"ra","$get$ra",function(){return new Error().stack!=void 0},"vZ","$get$vZ",function(){return P.KN()},"GA","$get$GA",function(){return P.nu("^\\S+$",!0,!1)},"d2","$get$d2",function(){return[]},"Hy","$get$Hy",function(){return P.nu('["\\x00-\\x1F\\x7F]',!0,!1)},"ot","$get$ot",function(){return P.nu('[^()<>@,;:"\\\\/[\\]?={} \\t\\x00-\\x1F\\x7F]+',!0,!1)},"Gr","$get$Gr",function(){return P.nu("(?:\\r\\n)?[ \\t]+",!0,!1)},"UF","$get$UF",function(){return P.nu('"(?:[^"\\x00-\\x1F\\x7F]|\\\\.)*"',!0,!1)},"to","$get$to",function(){return P.nu("\\\\(.)",!0,!1)},"Nu","$get$Nu",function(){return P.nu('[()<>@,;:"\\\\/\\[\\]?={} \\t\\x00-\\x1F\\x7F]',!0,!1)},"cG","$get$cG",function(){return P.nu("(?:"+$.$get$Gr().a+")*",!0,!1)},"eo","$get$eo",function(){return new M.lI($.$get$ls(),null)},"H3","$get$H3",function(){return new E.OF("posix","/",C.mI,P.nu("/",!0,!1),P.nu("[^/]$",!0,!1),P.nu("^/",!0,!1))},"Mk","$get$Mk",function(){return new L.IV("windows","\\",C.Hj,P.nu("[/\\\\]",!0,!1),P.nu("[^/\\\\]$",!0,!1),P.nu("^(\\\\\\\\[^\\\\]+\\\\[^\\\\/]+|[a-zA-Z]:[/\\\\])",!0,!1),P.nu("^[/\\\\](?![/\\\\])",!0,!1))},"ak","$get$ak",function(){return new F.ru("url","/",C.mI,P.nu("/",!0,!1),P.nu("(^[a-zA-Z][-+.a-zA-Z\\d]*://|[^/])$",!0,!1),P.nu("[a-zA-Z][-+.a-zA-Z\\d]*://[^/]*",!0,!1),P.nu("^/",!0,!1))},"ls","$get$ls",function(){return O.Rh()},"GT","$get$GT",function(){return P.nu("/",!0,!1).a==="\\/"},"I","$get$I",function(){return new F.tK("https://api.github.com/repos/flutter/flutter",null,null)}])
+try{(void 0).$method$($argumentsExpr$)}catch(z){return z.message}}())},"kq","$get$kq",function(){return H.cM(H.Mj(null))},"tt","$get$tt",function(){return H.cM(function(){try{null.$method$}catch(z){return z.message}}())},"dt","$get$dt",function(){return H.cM(H.Mj(void 0))},"Ai","$get$Ai",function(){return H.cM(function(){try{(void 0).$method$}catch(z){return z.message}}())},"Wc","$get$Wc",function(){return P.xg()},"h9","$get$h9",function(){return P.l9(null,C.NU,P.c8)},"x","$get$x",function(){return[]},"wY","$get$wY",function(){return P.WI()},"bt","$get$bt",function(){return H.DQ(H.XF(H.L([-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-1,-2,-2,-2,-2,-2,62,-2,62,-2,63,52,53,54,55,56,57,58,59,60,61,-2,-2,-2,-1,-2,-2,-2,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,-2,-2,-2,-2,63,-2,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,-2,-2,-2,-2,-2],[P.K])))},"Gt","$get$Gt",function(){return P.EF(["iso_8859-1:1987",C.r9,"iso-ir-100",C.r9,"iso_8859-1",C.r9,"iso-8859-1",C.r9,"latin1",C.r9,"l1",C.r9,"ibm819",C.r9,"cp819",C.r9,"csisolatin1",C.r9,"iso-ir-6",C.S0,"ansi_x3.4-1968",C.S0,"ansi_x3.4-1986",C.S0,"iso_646.irv:1991",C.S0,"iso646-us",C.S0,"us-ascii",C.S0,"us",C.S0,"ibm367",C.S0,"cp367",C.S0,"csascii",C.S0,"ascii",C.S0,"csutf8",C.dy,"utf-8",C.dy],P.qU,P.Zi)},"M5","$get$M5",function(){return typeof process!="undefined"&&Object.prototype.toString.call(process)=="[object process]"&&process.platform=="win32"},"ra","$get$ra",function(){return new Error().stack!=void 0},"vZ","$get$vZ",function(){return P.KN()},"GA","$get$GA",function(){return P.nu("^\\S+$",!0,!1)},"d2","$get$d2",function(){return[]},"Hy","$get$Hy",function(){return P.nu('["\\x00-\\x1F\\x7F]',!0,!1)},"ot","$get$ot",function(){return P.nu('[^()<>@,;:"\\\\/[\\]?={} \\t\\x00-\\x1F\\x7F]+',!0,!1)},"Gr","$get$Gr",function(){return P.nu("(?:\\r\\n)?[ \\t]+",!0,!1)},"UF","$get$UF",function(){return P.nu('"(?:[^"\\x00-\\x1F\\x7F]|\\\\.)*"',!0,!1)},"to","$get$to",function(){return P.nu("\\\\(.)",!0,!1)},"Nu","$get$Nu",function(){return P.nu('[()<>@,;:"\\\\/\\[\\]?={} \\t\\x00-\\x1F\\x7F]',!0,!1)},"cG","$get$cG",function(){return P.nu("(?:"+$.$get$Gr().a+")*",!0,!1)},"eo","$get$eo",function(){return new M.lI($.$get$ls(),null)},"H3","$get$H3",function(){return new E.OF("posix","/",C.mI,P.nu("/",!0,!1),P.nu("[^/]$",!0,!1),P.nu("^/",!0,!1))},"Mk","$get$Mk",function(){return new L.IV("windows","\\",C.Hj,P.nu("[/\\\\]",!0,!1),P.nu("[^/\\\\]$",!0,!1),P.nu("^(\\\\\\\\[^\\\\]+\\\\[^\\\\/]+|[a-zA-Z]:[/\\\\])",!0,!1),P.nu("^[/\\\\](?![/\\\\])",!0,!1))},"ak","$get$ak",function(){return new F.ru("url","/",C.mI,P.nu("/",!0,!1),P.nu("(^[a-zA-Z][-+.a-zA-Z\\d]*://|[^/])$",!0,!1),P.nu("[a-zA-Z][-+.a-zA-Z\\d]*://[^/]*",!0,!1),P.nu("^/",!0,!1))},"ls","$get$ls",function(){return O.Rh()},"GT","$get$GT",function(){return P.nu("/",!0,!1).a==="\\/"},"I","$get$I",function(){return new Z.tK("https://api.github.com/repos/flutter/flutter",null,null)}])
 I=I.$finishIsolateConstructor(I)
 $=new I()
 init.metadata=[]
