@@ -60,8 +60,8 @@ class Model with Decorator {
   // returns nullable int
   Future<int> _fetchCount(String uri) async {
     // for debug (regarding API limit
-    await Future.delayed(Duration(seconds: 1));
-    return 4000;
+    // await Future.delayed(Duration(seconds: 1));
+    // return 4000;
     // for debug (regarding API limit
 
     final http.Response res = await http.get(uri);
