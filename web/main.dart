@@ -57,11 +57,8 @@ class Model with Decorator {
     DOM.setSummaryText(flutterCount, opponentCount);
     DOM.mutateMyCount(formattedFlutterCount());
     DOM.mutateOpponentCount(formattedOpponentCount());
-    print(opponentCount);
-    print(flutterCount);
-
-    DOM.endLoading();
     // todo
+    DOM.endLoading();
   }
 
   // API access
