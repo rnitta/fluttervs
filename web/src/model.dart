@@ -61,7 +61,6 @@ class Model with Decorator {
     DOM.mutateOpponentName(_opponentName(), opponentRepo);
     DOM.mutateCriteriaClass(criteriaCandidates, criteria);
     DOM.mutateCriteriaTitle(criteria);
-    DOM.addClickEvents();
     await Future.wait([_fetchCount(opponentApiUri), _fetchCount(flutterApiUri)]).then((results) {
       opponentCount = results[0];
       flutterCount = results[1];
