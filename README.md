@@ -10,6 +10,9 @@ Written in dart.
 - [vs. ionic star](https://fluttervs.netlify.com/#stargazers.ionic-team/ionic)
 
 
+note: 
+There are [API Rate Limit (60 request per hour.)](https://developer.github.com/v3/#rate-limiting)
+
 # requirement
 - Dart >= 2.1
 
